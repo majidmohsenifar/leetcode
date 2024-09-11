@@ -12,10 +12,10 @@ pub fn is_palindrome(s: String) -> bool {
             only_alphanumeric.push(ch);
         }
     }
-    for i in 0..only_alphanumeric.len() / 2 {
-        if only_alphanumeric[i..i + 1]
-            != only_alphanumeric[only_alphanumeric.len() - 1 - i..only_alphanumeric.len() - i]
-        {
+
+    let v: Vec<char> = only_alphanumeric.chars().collect();
+    for i in 0..v.len() / 2 {
+        if v[i] != v[v.len() - i - 1] {
             return false;
         }
     }
