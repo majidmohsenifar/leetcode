@@ -1,6 +1,5 @@
 fn main() {
-    //let result = two_sum(vec![2, 7, 11, 15], 9);
-    let result = two_sum(vec![3, 2, 4], 6);
+    let result = two_sum(vec![2, 7, 11, 15], 9);
     println!("result: {:?}", result)
 }
 
