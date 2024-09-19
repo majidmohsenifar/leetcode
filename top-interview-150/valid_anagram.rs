@@ -15,10 +15,6 @@ pub fn is_anagram(s: String, t: String) -> bool {
     }
     for i in 0..t_chars.len() {
         map.entry(&t_chars[i]).and_modify(|c| *c -= 1);
-        //println!("{},{}", t_chars[i], count);
-        //if *count != 0 {
-        //return false;
-        //}
     }
     for v in map.values() {
         if *v != 0 {

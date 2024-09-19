@@ -1,4 +1,5 @@
 fn main() {
+    //TODO:
     //let jumps = vec![4, 1, 1, 3, 1, 1, 1];
     //let jumps = vec![1, 1, 1, 1];
     let jumps = vec![2, 3, 1, 1, 4];
