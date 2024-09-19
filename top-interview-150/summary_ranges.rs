@@ -28,7 +28,6 @@
 //[8,9] --> "8->9"
 
 fn main() {
-    //TODO:
     //let result = summary_ranges(vec![0, 1, 2, 4, 5, 7]);
     let result = summary_ranges(vec![0, 2, 3, 4, 6, 8, 9]);
     println!("result: {:#?}", result)
