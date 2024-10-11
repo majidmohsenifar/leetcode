@@ -44,6 +44,7 @@ impl TreeNode {
     }
 }
 
+//using stack
 pub fn count_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     if root.is_none() {
         return 0;
@@ -63,6 +64,7 @@ pub fn count_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     count
 }
 
+//using recursive
 pub fn count_nodes_2(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     if root.is_none() {
         return 0;
