@@ -8,8 +8,6 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     for (i, v) in nums.iter().enumerate() {
         map.insert(*v, i);
     }
-    println!("map: {:?}", map);
-
     for (i, v) in nums.iter().enumerate() {
         if let Some(i2) = map.get(&(target - v)) {
             if i != *i2 {
