@@ -18,10 +18,11 @@ fn main() {
 }
 
 pub fn h_index(mut citations: Vec<i32>) -> i32 {
+    let len = citations.len();
     citations.sort();
     for (i, c) in citations.iter().enumerate() {
-        if (citations.len() - i) as i32 - 1 <= *c {
-            return std::cmp::min(*c, (citations.len() - i) as i32);
+        if (len - i) as i32 <= *c {
+            return (len - i) as i32;
         }
     }
     citations[0]
