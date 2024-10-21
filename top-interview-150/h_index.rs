@@ -18,6 +18,7 @@ fn main() {
 }
 
 pub fn h_index(mut citations: Vec<i32>) -> i32 {
+    //this is nlog(n), as sort takes nlog(n)
     let len = citations.len();
     citations.sort();
     for (i, c) in citations.iter().enumerate() {
